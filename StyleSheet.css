@@ -1,0 +1,54 @@
+#container {
+    
+}
+
+#header_pic {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 25px;
+    border: 2px solid gray;
+    border-radius: 100px;
+    background-color: white;
+    z-index: 1;
+}
+
+#header_curve {
+    width: 900px;
+    height: 125px;
+    margin: 0 auto;
+    margin-top: -50px;
+    border: 2px solid gray;
+    border-bottom: 0px;
+    border-radius: 50px;
+}
+
+#fName {
+    font-size: 50px;
+    margin-top: 15px;
+    margin-left: 130px;
+}
+
+#lName {
+    font-size: 50px;
+    margin-top: -105px;
+    margin-right: 100px;
+}
+
+#nav {
+    width: 900px;
+    height: 75px;
+    margin: 0 auto;
+    margin-top: -50px;
+    border: 2px solid gray;
+    border-bottom: 0px;
+    background-color: white;
+}
+
+#content {
+    width: 900px;
+    height: 900px;
+    margin: 0 auto;
+    border: 2px solid gray;
+}

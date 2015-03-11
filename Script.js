@@ -15,8 +15,32 @@ function nav_top() {
     }
 }
 
+function nav_expand() {
+    //http://jsfiddle.net/Vy33z/4/
+    //this might help??
+    /*var $div = $('div');
+    var divleft = $div.position().left;
+    $('div').scroll(function() {
+        $('img').each(function() {
+            img = $(this);
+            imgleft = img.position().left;
+            if (imgleft >= divleft && imgleft + img.width() <= divleft + $div.width()) {
+                $(this).css({
+                    opacity: '1'
+                })
+                $(this).siblings('img').css({
+                    opacity: '0.2'
+                });
+                return false;
+            }
+        });
+    })*/
+}
+
 $(function () {
     $(window).scroll(nav_top);
     nav_top();
     $('nav').addClass('unstick');
 })
+
+

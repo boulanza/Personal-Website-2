@@ -24,42 +24,32 @@ function nav_expand() {
     var header3 = $('#header3').offset().top;
 
     if (top_of_screen > header3) {
-        $('#sub1').css({
-            display: none
-        });
-        $('#sub2').css({
-            display: none
-        });
-        $('#sub3').css({
-            display: inline
-        });
+        $("#sub1").hide();
+        $("#sub2").hide();
+        $("#sub3").show();
     }
     else if (top_of_screen > header2) {
-        $('#sub1').css({
-            display: none
-        });
-        $('#sub2').css({
-            display: inline
-        });
-        $('#sub3').css({
-            display: none
-        });
+        $("#sub1").hide();
+        $("#sub2").show();
+        $("#sub3").hide();
     }
     else if (top_of_screen > header1) {
-    alert("dklaj");
-        $('#sub1').css({
-            display: inline
-        });
-        $('#sub2').css({
-            display: none
-        });
-        $('#sub3').css({
-            display: none
-        });
+    //alert(header1);
+        $("#sub1").show();
+        $("#sub2").hide();
+        $("#sub3").hide();
+    }
+    else {
+        $("#sub1").hide();
+        $("#sub2").hide();
+        $("#sub3").hide();
     }
 }
 
 $(function () {
+    $("#sub1").hide();
+    $("#sub2").hide();
+    $("#sub3").hide();
     $(window).scroll(nav_top);
     nav_top();
     nav_expand();

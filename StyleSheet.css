@@ -87,14 +87,15 @@ nav.unstick {
     transform: translateY(-50%);
 }
 
-#sub1 {
-    display: none;
+#links li a:link, #links li a:visited {
+    color: gray;
+    text-decoration: none;
+    font-size: 20px;
 }
 
-#sub2 {
-    display: none;
-}
-
-#sub3 {
-    display: none;
+#sub1 a:link, #sub1 a:visited, #sub2 a:link, #sub2 a:visited, #sub3 a:link, #sub3 a:visited {
+    color: blue !important;
+    font-size: 18px !important;
+    display: table-cell;
+    padding-right: 35px;
 }

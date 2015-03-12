@@ -86,3 +86,15 @@ nav.unstick {
     top: 50%;
     transform: translateY(-50%);
 }
+
+#sub1 {
+    display: none;
+}
+
+#sub2 {
+    display: none;
+}
+
+#sub3 {
+    display: none;
+}

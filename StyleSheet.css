@@ -93,9 +93,6 @@ nav.unstick {
     font-size: 20px;
 }
 
-#sub1 a:link, #sub1 a:visited, #sub2 a:link, #sub2 a:visited, #sub3 a:link, #sub3 a:visited {
+.highlight {
     color: blue !important;
-    font-size: 18px !important;
-    display: table-cell;
-    padding-right: 35px;
 }

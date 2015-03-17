@@ -14,45 +14,49 @@ function nav_top() {
         $('nav').addClass('unstick');
     }
 
-    nav_expand();
+    nav_pos();
 }
 
-function nav_expand() {
+function nav_pos() {
     var top_of_screen = $(window).scrollTop();
-    var header1 = $('#header1').offset().top;
-    var header2 = $('#header2').offset().top;
-    var header3 = $('#header3').offset().top;
+    var header1 = $('#HelloWorld').offset().top;
+    var header2 = $('#Education').offset().top;
+    var header3 = $('#WorkExperience').offset().top;
+    var header4 = $('#Projects').offset().top;
+    var header5 = $('#Contact').offset().top;
 
-    if (top_of_screen > header3) {
-        $("#sub1").hide();
-        $("#sub2").hide();
-        $("#sub3").show();
+    if (top_of_screen > header5) {
+        $('#co').css('text-decoration', 'underline');
+        $('#pr').css('text-decoration', 'none');
+    }
+    else if (top_of_screen > header4) {
+        $('#pr').css('text-decoration', 'underline');
+        $('#co').css('text-decoration', 'none');
+        $('#we').css('text-decoration', 'none');
+    }
+    else if (top_of_screen > header3) {
+        $('#we').css('text-decoration', 'underline');
+        $('#pr').css('text-decoration', 'none');
+        $('#ed').css('text-decoration', 'none');
     }
     else if (top_of_screen > header2) {
-        $("#sub1").hide();
-        $("#sub2").show();
-        $("#sub3").hide();
+        $('#ed').css('text-decoration', 'underline');
+        $('#we').css('text-decoration', 'none');
+        $('#hw').css('text-decoration', 'none');
     }
     else if (top_of_screen > header1) {
-    //alert(header1);
-        $("#sub1").show();
-        $("#sub2").hide();
-        $("#sub3").hide();
+        $('#hw').css('text-decoration', 'underline');
+        $('#ed').css('text-decoration', 'none');
     }
     else {
-        $("#sub1").hide();
-        $("#sub2").hide();
-        $("#sub3").hide();
+        $('#hw').css('text-decoration', 'none');
     }
 }
 
 $(function () {
-    $("#sub1").hide();
-    $("#sub2").hide();
-    $("#sub3").hide();
     $(window).scroll(nav_top);
     nav_top();
-    nav_expand();
+    nav_pos();
     $('nav').addClass('unstick');
 })
 

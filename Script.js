@@ -19,13 +19,14 @@ function nav_top() {
 
 function nav_pos() {
     var top_of_screen = $(window).scrollTop();
+    var winHeight = $(window).height();
     var header1 = $('#HelloWorld').offset().top;
     var header2 = $('#Education').offset().top;
     var header3 = $('#WorkExperience').offset().top;
     var header4 = $('#Projects').offset().top;
     var header5 = $('#Contact').offset().top;
 
-    if (top_of_screen > header5) {
+    if (top_of_screen > header5 || top_of_screen + $(window).height() == $(document).height()) {
         $('#co').css('text-decoration', 'underline');
         $('#pr').css('text-decoration', 'none');
     }

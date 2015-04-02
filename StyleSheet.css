@@ -1,3 +1,19 @@
+body {
+    color: #000000;
+    background-color: #f2fbff;
+}
+
+/* background-image: url("polaroid_2x.png");
+    background-repeat: repeat; */
+
+h1 {
+    color: #37711b;
+}
+
+h2 {
+    color: #1f4f77;
+}
+
 #container {
     width: 100%;
     text-align: center;
@@ -25,15 +41,19 @@
 }
 
 #fName {
-    font-size: 50px;
-    margin-top: 15px;
-    margin-left: 130px;
+    position: relative;
+    left: -100px;
+    font-size: 60px;
+    color: #203d12;
+    font-weight: bold;
 }
 
 #lName {
-    font-size: 50px;
-    margin-top: -105px;
-    margin-right: 100px;
+    position: relative;
+    right: -130px;
+    font-size: 60px;
+    color: #203d12;
+    font-weight: bold;
 }
 
 #nav {
@@ -61,6 +81,7 @@ nav.unstick {
     margin-top: -55px;
     background-color: #ffffff;
     border-top: 0px;
+    margin-bottom: 100px;
 }
 
 .borders {
@@ -88,11 +109,12 @@ nav.unstick {
 }
 
 #links li a:link, #links li a:visited {
-    color: gray;
+    color: #4b9626;
     text-decoration: none;
     font-size: 20px;
+    font-weight: bold;
 }
 
-.highlight {
-    color: blue !important;
+#links li a:hover, #links li a:active {
+    color: #1f4f77;
 }
